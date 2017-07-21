@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/labadmin/AndroidStudioProjects/Flickster/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="c0376df95c7ae7b594440ef56ca31289a49a8590">
-        <dex dex="/Users/labadmin/AndroidStudioProjects/Flickster/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7c8a24500dfc316288b68e13c852b076ca616f25/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/labadmin/AndroidStudioProjects/Flickster/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="/Users/labadmin/AndroidStudioProjects/Flickster/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ab87d6b08d51fc6f3bdc690bb56d4cc14df249dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/labadmin/AndroidStudioProjects/Flickster/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d37812c81381cda3be96a76d3cb5584b774ee7c1">
+        <dex dex="/Users/labadmin/AndroidStudioProjects/Flickster/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7c8a24500dfc316288b68e13c852b076ca616f25/classes.dex" />
     </item>
 
 </items>

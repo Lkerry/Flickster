@@ -74,6 +74,13 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie> {
             Picasso.with(getContext()).load(movie.getBackdropPath()).placeholder(R.drawable.placeholder) .transform(new RoundedCornersTransformation(8, 8)).into(viewHolder.ivImage);
         }
 
+
+
+       Picasso.with(getContext()).load(movie.getPosterPath())
+                .transform(new RoundedCornersTransformation(30, 30)).into(viewHolder.ivImage);
+
+
+
         return convertView;
 
     }
