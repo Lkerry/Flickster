@@ -28,6 +28,8 @@
         android:textColor="@color/colorPrimary" />
 
     <TextView
+        android:background="@color/colorPrimaryDark"
+        android:maxLines="10"
         android:id="@+id/tvOverview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
