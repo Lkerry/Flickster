@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:background="#d3d3d3">
 
     <ImageView
         android:layout_width="150dp"
@@ -18,18 +18,17 @@
 
     <TextView
         android:id="@+id/tvTitle"
+        android:textStyle="bold"
+        android:fontFamily="casual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         tools:text="John Wick 2"
         android:layout_alignParentTop="true"
-        
         android:layout_toRightOf="@+id/ivMovieImage"
         android:textColor="@color/colorPrimary" />
 
     <TextView
-        android:background="@color/colorPrimaryDark"
-        android:maxLines="10"
         android:id="@+id/tvOverview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,7 +36,9 @@
         android:layout_marginTop="15dp"
         android:layout_toEndOf="@+id/ivMovieImage"
         android:layout_toRightOf="@+id/ivMovieImage"
-        android:textColor="@android:color/holo_blue_bright"
+        android:fontFamily="casual"
+        android:maxLines="10"
+        android:textColor="@android:color/holo_purple"
         android:textSize="14sp"
         tools:text="John Wick is forced out of retirement by a former associate looking to seize control of a shadowy international assassins’ guild. Bound by a blood oath to aid him, Wick travels to Rome and does battle against some of the world’s most dangerous killers." />
 </RelativeLayout>
