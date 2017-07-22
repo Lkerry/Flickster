@@ -4,6 +4,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
@@ -11,11 +12,17 @@ import java.util.ArrayList;
  * Created by labadmin on 7/20/17.
  */
 
-public class Movie {
+public class Movie implements Serializable{
     String posterpath;
     String backdroppath;
     String originalTitle;
     String overview;
+
+    public float getScore() {
+        return score;
+    }
+
+    float score;
 
     public String getPosterPath(){
         return String.format ("https://image.tmdb.org/t/p/w342/%s" , posterpath);
@@ -37,6 +44,7 @@ public class Movie {
         this.backdroppath = jsonObject.getString("backdrop_path");
         this.originalTitle = jsonObject.getString("original_title");
         this.overview = jsonObject.getString("overview");
+        this.score = (float) jsonObject.getDouble("vote_average");
     }
 
     public static ArrayList<Movie> fromJSONArray(JSONArray array) {

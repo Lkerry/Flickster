@@ -1,9 +1,13 @@
 package com.example.labadmin.flickster;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 
 import com.example.labadmin.flickster.adapters.MovieArrayAdapter;
 import com.example.labadmin.flickster.models.Movie;
@@ -25,7 +29,7 @@ public class MovieActivity extends AppCompatActivity {
     ArrayList<Movie> movies;
     MovieArrayAdapter movieAdapter;
     ListView LvItems;
-
+    ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,10 +39,22 @@ public class MovieActivity extends AppCompatActivity {
         getSupportActionBar().setLogo(R.drawable.placeholder);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
+        progressBar =   (ProgressBar)findViewById(R.id.progressBar);
         LvItems = (ListView) findViewById(R.id.lvMovies);
         movies = new ArrayList<>();
         movieAdapter = new MovieArrayAdapter(this, movies);
         LvItems.setAdapter(movieAdapter);
+        LvItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Movie movie =(Movie) LvItems.getItemAtPosition(i);
+                Intent pastToDetail = new Intent(MovieActivity.this, MovieDetailsActivity.class);
+                pastToDetail.putExtra("movie",movie);
+
+                startActivity(pastToDetail); // brings up the second activity
+
+            }
+        });
 
         String Url = "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
 
@@ -53,6 +69,7 @@ public class MovieActivity extends AppCompatActivity {
                     movieJsonResults = response.getJSONArray("results");
                     movies.addAll(Movie.fromJSONArray(movieJsonResults));
                     movieAdapter.notifyDataSetChanged();
+                    progressBar.setVisibility(View.GONE);
                     log.d("DEBUG", movieJsonResults.toString());
                 } catch (JSONException e){
                     e.printStackTrace();

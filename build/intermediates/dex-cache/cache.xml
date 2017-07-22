@@ -3,12 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/Users/labadmin/AndroidStudioProjects/Flickster/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/labadmin/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="d084d8b0713ff7ea6d25b666b701a6ebf4f34a78">
-        <dex dex="/Users/labadmin/AndroidStudioProjects/Flickster/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7c8a24500dfc316288b68e13c852b076ca616f25/classes.dex" />
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="/Users/labadmin/AndroidStudioProjects/Flickster/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.4.0_1eba697d1cc9be6e1ff54e2fd8094d8dead5d422/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +18,24 @@
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="/Users/labadmin/AndroidStudioProjects/Flickster/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ab87d6b08d51fc6f3bdc690bb56d4cc14df249dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/labadmin/AndroidStudioProjects/Flickster/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c4691915139d1f5345c05ff02659a557d243cb36">
+        <dex dex="/Users/labadmin/AndroidStudioProjects/Flickster/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7c8a24500dfc316288b68e13c852b076ca616f25/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/labadmin/.android/build-cache/3a5aca6a6e07cb687a7afbf5db33efd3f9caec28/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="/Users/labadmin/AndroidStudioProjects/Flickster/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a560ecf149028e239af0204e86b0e0f18ff4bfc4/classes.dex" />
     </item>
 
 </items>
