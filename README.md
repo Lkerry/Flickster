@@ -50,6 +50,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+My biggest problem is to make sure the images have been sized properly, I can imagine that you are trying to do more complete tasks with images, things can be quite difficult.
 
 ## Open-source libraries used
 
