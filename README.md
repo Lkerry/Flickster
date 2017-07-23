@@ -1,7 +1,7 @@
-Flickster
+# Project 1 - Flickster
 Build a read-only movie listing app using the Movie Database API.
 
-** Flickster ** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
+Shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
 Time spent: ** 20 ** hours spent in total
 
